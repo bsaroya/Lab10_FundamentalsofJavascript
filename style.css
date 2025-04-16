@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  #output, #message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7f1ff;
+    border-left: 5px solid #007bff;
+  }
+  
+  .error {
+    background-color: #ffe7e7;
+    border-left: 5px solid #ff4d4d;
+  }
+  
+  .post-section h3 {
+    margin: 0;
+    color: #007bff;
+  }
+  
+  .post-section p {
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

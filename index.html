@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab 10 - API Calls</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Lab 10 - API Calls</h1>
+
+    <div class="buttons">
+      <button id="fetchBtn">Fetch Post with fetch()</button>
+      <button id="xhrBtn">Fetch Post with XHR</button>
+    </div>
+
+    <section id="output" class="post-section"></section>
+
+    <form id="postForm">
+      <h2>Create a New Post (POST)</h2>
+      <input type="text" id="postTitle" placeholder="Post Title" required />
+      <textarea id="postBody" placeholder="Post Body" required></textarea>
+      <button type="submit">Submit Post</button>
+    </form>
+
+    <form id="putForm">
+      <h2>Update Existing Post (PUT)</h2>
+      <input type="number" id="postId" placeholder="Post ID to Update" required />
+      <input type="text" id="updateTitle" placeholder="Updated Title" required />
+      <textarea id="updateBody" placeholder="Updated Body" required></textarea>
+      <button type="submit">Update Post</button>
+    </form>
+
+    <form id="deleteForm">
+      <h2>Delete Post (DELETE)</h2>
+      <input type="number" id="deleteId" placeholder="Post ID to Delete" required />
+      <button type="submit">Delete Post</button>
+    </form>
+
+    <section id="message"></section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
